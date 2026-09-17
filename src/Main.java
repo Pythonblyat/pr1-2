@@ -14,10 +14,10 @@ interface Transformer<T, R> {
 }
 
 class Main {
-    // В нових версіях Java можна просто void main()
+
     void main() {
 
-        // Використовуємо method reference (String::length) замість лямбди
+
         Transformer<String, Integer> stringLength = String::length;
         stringLength.printResult("Привіт, Java!");
 
